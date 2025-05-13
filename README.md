@@ -50,9 +50,9 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Convert PDF file to txt, only text content;\
+:heavy_check_mark: Convert PDF file to PDF with selectable text, to find texts where the content are only image based;\
+:heavy_check_mark: After convert, the text files version will be zipped to be sent or uploaded/downloaded;
 
 ## :rocket: Technologies ##
 
@@ -68,24 +68,28 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/)installed.
 
 ## :checkered_flag: Starting ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/ocr_doc
+$ git clone https://github.com/ribastudio/ocr_doc
 
 # Access
 $ cd ocr_doc
 
+# Generate env - if you like
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+
 # Install dependencies
-$ yarn
+$ python pip install -r requirements.txt
 
-# Run the project
-$ yarn start
+# Run the script
+$ python extract.py [file]
 
-# The server will initialize in the <http://localhost:3000>
+# The extract will be convert PDF to TXT or generate an one PDF file to find text, etc
 ```
 
 ## :memo: License ##
