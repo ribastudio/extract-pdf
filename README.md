@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-Describe your project
+A mini script to convert PDF imagem based content to PDF text selectable content or to text file per page, output to zipped file
 
 ## :sparkles: Features ##
 
